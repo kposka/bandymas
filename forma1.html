@@ -5,18 +5,20 @@
     <title>Forma</title>
       <style type="text/css">
 
-
-body{
+body {
+  margin:0px;
+}
+.body{
   background-image:url(mountain2.jpg);
   width:100%;
-  height: 10000px;
+  height: 1200px;
   background-repeat:no-repeat;
-  position:fixed;
+  position:relative;
   margin:0px;
 }
 
 .headeris{
-  position:relative;
+  position:absolute;
   width:100%;
   height:50px;
   background-color: black;
@@ -24,10 +26,11 @@ body{
 
 .headeris .list {
   position:absolute;
-  left:1500px;
+  left:1200px;
+  display:inline;
 }
 
-.headeris .list li{
+.body .headeris .list li{
   display:inline;
   Font-size: 20px;
   letter-spacing: 2px;
@@ -44,10 +47,10 @@ body{
 .klausimynas{
   position:relative;
   width:25%;
-  height:600px;
+  height:1000px;
   background-color:white;
   top:100px;
-  left:700px;
+  left:600px;
   border:solid black 15px;
   border-radius: 10px;
 }
@@ -60,6 +63,14 @@ body{
   font-family:monospace;
 }
 .klausimynas input[type="email"]{
+  width:90%;
+  display: inline-block;
+  margin:15px;
+  font-size:17px;
+  font-family:monospace;
+}
+
+.klausimynas input[type="number"]{
   width:90%;
   display: inline-block;
   margin:15px;
@@ -100,9 +111,21 @@ body{
   font-family:monospace;
   font-size:30px;
 }
+
+.klausimynas option{
+  display: inline-block;
+}
+.klausimynas p{
+  display:inline-block;
+  margin:0 0 0 15px;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+}
 </style>
 </head>
 <body>
+  <div class="body">
     <div class="headeris">
       <ul class="list">
         <li><a href="index.html"> Home </a></li>
@@ -121,6 +144,26 @@ body{
           <label for="Email"> El pastas </label>
           <input type="email" name="email" value="email">
 
+          <label for="Email"> El pastas </label>
+          <input type="email" name="email" value="email">
+
+          <label for="phonenumber"> telefono numeris </label>
+          <input type="number" name="phonenumber" value="phonenumber">
+
+          <p> Koks jusu amzius? </p><br>
+
+          <label for="age1"> 0-16 </label>
+          <input type="radio" name="amzius" accept=""id="age1" value="0-16"><br>
+          <label for="age2"> 16-38 </label>
+          <input type="radio" name="amzius" id="age2" value="16-38"><br>
+          <label for="age3"> 38-65 </label>
+          <input type="radio" name="amzius" id="age3" value="38-65"><br>
+          <label for="age4"> 65+ </label>
+          <input type="radio" name="amzius" id="age4" value="65+"><br><br>
+
+          <label for="Email"> El pastas </label>
+          <input type="email" name="email" value="email">
+
           <label for="miestas"> Tavo gyvenamoji vieta </label>
             <select name="miestas">
               <option value="Vilnius"> Vilnius </option>
@@ -133,5 +176,6 @@ body{
         <button type="submit"> Pateikti </button>
       </form>
     </div>
+  </div>
   </body>
 </html>
