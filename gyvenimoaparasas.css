@@ -1,0 +1,111 @@
+
+body{
+  margin:0;
+}
+
+.headeris {
+  position:fixed;
+  width:100%;
+  height:220px;
+  background: linear-gradient(#3DB2FF, #A12568);
+  z-index: 1;
+}
+
+.foto{
+  position:absolute;
+  height:100%;
+  width:200px;
+  display: inline-block;
+  top: 10px;
+  left:30px;
+}
+
+.foto img{
+  width:100%;
+  height:180px;
+  border: solid black 10px;
+  border-radius: 20%;
+
+}
+
+.headeris h1{
+  text-align:center;
+  font-size:60px;
+  font-family: monospace;
+}
+
+.greetings span{
+  color: #FEC260;
+  font-size:45px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-shadow: 10px -5px 12px black;
+}
+
+.fonas{
+  position:relative;
+  width:100%;
+  height:2000px;
+  top:220px;
+  background: linear-gradient(#A12568, #3DB2FF);
+}
+
+.fonas .faktai {
+  position:absolute;
+  left:50px;
+  top:100px;
+}
+
+.faktai h1{
+  font-size: 60px;
+  font-family:monospace;
+  text-transform: uppercase;
+}
+.faktai ul{
+font-size: 25px;
+font-family: monospace;
+letter-spacing:2px;
+list-style-type:ethiopic-numeric;
+}
+.faktai li{
+  margin-top:7px;
+}
+
+.forma {
+  position:relative;
+  top: 199px;
+  background-color: #3DB2FF;
+  height: 500px;
+}
+
+.forma h1{
+  position:relative;
+  top:50px;
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  margin:0;
+}
+
+button {
+  background-color: black;
+  color:white;
+  width:50%;
+  height:150px;
+  position:absolute;
+  left:500px;
+  top:200px;
+  font-size:50px;
+  font-family:monospace;
+  text-shadow: 0 0 15px #3DB2FF;
+}
+
+button:hover{
+  background: #FFB830;
+  color:black;
+  transform-style: (0, 0, 15)
+}
+/*#3DB2FF #FFEDDA #FFB830 #FF2442
+#00A19D #FFF8E5 #FFB344 #E05D5D
+
+ */
