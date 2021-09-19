@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forma</title>
+      <style type="text/css">
+
+
+body{
+  background-image:url(mountain2.jpg);
+  width:100%;
+  height: 10000px;
+  background-repeat:no-repeat;
+  position:fixed;
+  margin:0px;
+}
+
+.headeris{
+  position:relative;
+  width:100%;
+  height:50px;
+  background-color: black;
+}
+
+.headeris .list {
+  position:absolute;
+  left:1500px;
+}
+
+.headeris .list li{
+  display:inline;
+  Font-size: 20px;
+  letter-spacing: 2px;
+  font-family: monospace;
+}
+
+.headeris .list li a{
+  color:white;
+}
+
+.headeris .list li a:hover{
+  color:#3DB2FF;
+}
+.klausimynas{
+  position:relative;
+  width:25%;
+  height:600px;
+  background-color:white;
+  top:100px;
+  left:700px;
+  border:solid black 15px;
+  border-radius: 10px;
+}
+
+.klausimynas input[type="text"]{
+  width:90%;
+  display:inline-block;
+  margin:15px;
+  font-size:17px;
+  font-family:monospace;
+}
+.klausimynas input[type="email"]{
+  width:90%;
+  display: inline-block;
+  margin:15px;
+  font-size:17px;
+  font-family:monospace;
+}
+
+.klausimynas label{
+  display:inline-block;
+  margin:0 0 0 15px;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.klausimynas button{
+  font-weight: bold;
+  text-align: center;
+  margin:2px auto;
+  background-color: black;
+  color:white;
+  font-size:25px;
+  width:100%;
+  display:inline-block;
+}
+.klausimynas textarea{
+  width:90%;
+  display:block;
+  margin:15px auto;
+}
+
+.klausimynas select{
+  display:inline-block;
+  margin: 5px;
+}
+
+.klausimynas h1{
+  text-align: center;
+  font-family:monospace;
+  font-size:30px;
+}
+</style>
+</head>
+<body>
+    <div class="headeris">
+      <ul class="list">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="#"> Contacts</a> </li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="klausimynas">
+        <form method="get" action="aciu.html">
+          <h1> Klausimynas </h2>
+          <label for="vardas"> Vardas </label>
+          <input  type="text" name="Vardas" value="Vardas">
+
+          <label for="pavarde"> Pavarde </label>
+          <input  type="text" name="Pavarde" value="Pavarde">
+
+          <label for="Email"> El pastas </label>
+          <input type="email" name="email" value="email">
+
+          <label for="miestas"> Tavo gyvenamoji vieta </label>
+            <select name="miestas">
+              <option value="Vilnius"> Vilnius </option>
+              <option value="Kaunas"> Kaunas </option>
+              <option value="Klaipeda"> Klaipeda </option>
+              <option value="Siauliai">Siauliai</option>
+              <option value="Trakai"> Trakai </option>
+            </select>
+            <textarea  name="bio" cols="20" rows="10"> Prisistatymas </textarea>
+        <button type="submit"> Pateikti </button>
+      </form>
+    </div>
+  </body>
+</html>
