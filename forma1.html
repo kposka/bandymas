@@ -78,6 +78,15 @@ body {
   font-family:monospace;
 }
 
+
+.klausimynas input[type="checkbox"]{
+  width:90%;
+  display: block;
+  margin:15px;
+  font-size:10px;
+  font-family:monospace;
+}
+
 .klausimynas label{
   display:inline-block;
   margin:0 0 0 15px;
@@ -99,6 +108,7 @@ body {
   width:90%;
   display:block;
   margin:15px auto;
+  text-align: center;
 }
 
 .klausimynas select{
@@ -122,6 +132,8 @@ body {
   font-family: monospace;
   font-weight: bold;
 }
+
+
 </style>
 </head>
 <body>
@@ -136,19 +148,16 @@ body {
         <form method="get" action="aciu.html">
           <h1> Klausimynas </h2>
           <label for="vardas"> Vardas </label>
-          <input  type="text" name="Vardas" value="Vardas">
+          <input  type="text" id="Vardas" placeholder="vardas">
 
           <label for="pavarde"> Pavarde </label>
-          <input  type="text" name="Pavarde" value="Pavarde">
+          <input  type="text" id="Pavarde" placeholder="pavarde">
 
           <label for="Email"> El pastas </label>
-          <input type="email" name="email" value="email">
-
-          <label for="Email"> El pastas </label>
-          <input type="email" name="email" value="email">
+          <input type="email" id="email" placeholder="El. pastas">
 
           <label for="phonenumber"> telefono numeris </label>
-          <input type="number" name="phonenumber" value="phonenumber">
+          <input type="number" id="phonenumber" placeholder="Telefono numeris">
 
           <p> Koks jusu amzius? </p><br>
 
@@ -161,8 +170,6 @@ body {
           <label for="age4"> 65+ </label>
           <input type="radio" name="amzius" id="age4" value="65+"><br><br>
 
-          <label for="Email"> El pastas </label>
-          <input type="email" name="email" value="email">
 
           <label for="miestas"> Tavo gyvenamoji vieta </label>
             <select name="miestas">
@@ -172,7 +179,13 @@ body {
               <option value="Siauliai">Siauliai</option>
               <option value="Trakai"> Trakai </option>
             </select>
-            <textarea  name="bio" cols="20" rows="10"> Prisistatymas </textarea>
+
+            <textarea  name="bio" cols="20" rows="10" > Prisistatykite </textarea>
+
+            <label for="privatumopolitika"> Sutinku pateikti asmeninius duomenis</label>
+            <input type="checkbox" id="privatumopolitika" value="checkbox" required>
+
+
         <button type="submit"> Pateikti </button>
       </form>
     </div>
