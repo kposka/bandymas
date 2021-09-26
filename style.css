@@ -1,0 +1,311 @@
+*{
+  margin:0px;
+}
+
+.navcontainer{
+  position:fixed;
+  width:100%;
+  height:200px;
+  background: linear-gradient(to left, #99F3BD, white);
+  z-index: 1;
+}
+.logo{
+  position:absolute;
+  width:600px;
+  height:200px;
+  margin:m
+}
+
+.logo_image{
+  position:absolute;
+  width:150px;
+  height:150px;
+  left:40px;
+  top:10px;
+}
+
+.greetings{
+  position:absolute;
+  width: 200px;
+  height:100px;
+  top:45px;
+  left:180px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.greetings span{
+  color: #FFEF78;
+  font-size: 40px;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.greetings p{
+  font-size:25px;
+  font-family:'Barlow Condensed', sans-serif;
+  letter-spacing: 5px;
+
+}
+
+.navbar{
+  position:absolute;
+  width:800px;
+  height:200px;
+  left:67%;
+  max-width: 100%;
+}
+
+.navbar .fonts{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family:'Barlow Condensed', sans-serif;
+}
+
+.navbar ul li{
+  display:inline;
+  line-height: 200px;
+  margin: auto 20px;
+}
+
+.home a{
+  color:black;
+  padding:5px;
+  text-decoration: none;
+  transition:0.5s ease-in-out;
+
+}
+
+.home a:hover{
+  background:#FFEF78;
+  padding:20px;
+  border: 2px dotted black;
+  border-radius:20px;
+  font-size: 35px;
+}
+
+
+.locations a{
+  color:black;
+  padding:5px;
+  text-decoration: none;
+  transition:0.5s;
+}
+
+.locations a:hover{
+  color:black;
+  padding:20px;
+  border-radius:20px;
+  border:2px dotted black;
+  background:#6F69AC;
+  font-size: 35px;
+}
+
+
+.gift a{
+  color:black;
+  padding:5px;
+  text-decoration: none;
+  transition:0.5s;
+}
+
+.gift a:hover{
+color:black;
+padding:20px;
+border-radius:20px;
+border:2px dotted black;
+background:#FD6F96;
+font-size: 35px;
+}
+
+.content{
+  background:linear-gradient(to left,#99F3BD, white);
+  position:relative;
+  top:200px;
+  height:1000px;
+  width:100%;
+}
+
+.meniu{
+  position:absolute;
+  left:50%;
+  top:40px;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+  .smoothies{
+    background-image:url("smoothie2.jpg");
+    position:relative;
+    height:500px;
+    width:400px;
+    top:120px;
+    left:7%;
+    border-radius:20px;
+}
+
+
+.overplay{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background:rgba(0, 0, 0,0.6);
+color:white;
+font-family:'Barlow Condensed', sans-serif;
+display:flex;
+flex-direction:column;
+align-items: center;
+justify-content:center;
+opacity: 0;
+transition: 0.5s;
+}
+
+.overplay .smt{
+  font-size: 50px;
+}
+
+.description{
+  font-size: 20px;
+  margin-top:10px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.overplay:hover{
+  opacity:1;
+  border-radius: 20px;
+}
+
+.overplay > *{
+  transform:translateY(200px);
+  transition:transform 0.5s;
+}
+
+
+.overplay:hover > *{
+  transform:translateY(0);
+  transition:transform 0.5s;
+}
+
+.juices{
+    background-image:url("juices4.jpg");
+    background-repeat: no-repeat;
+    position:absolute;
+    background-size: cover;
+    height:500px;
+    width:400px;
+    top:120px;
+    left:37%;
+    border-radius:20px;
+}
+
+.overplay_juices{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background:rgba(0, 0, 0,0.6);
+color:white;
+font-family:'Barlow Condensed', sans-serif;
+display:flex;
+flex-direction:column;
+align-items: center;
+justify-content:center;
+opacity: 0;
+transition: 0.5s;
+}
+
+.overplay_juices:hover{
+  opacity:1;
+  border-radius:20px;
+}
+
+.overplay_juices > *{
+  transform:translateY(200px);
+  transition:transform 0.5s;
+}
+
+
+.overplay_juices:hover > *{
+  transform:translateY(0);
+  transition:transform 0.5s;
+}
+
+.title_juices{
+  font-size: 50px;
+}
+
+.description_juices{
+  font-size: 15px;
+  margin-top:10px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.bowl{
+  background-image:url("bowl6.jpg");
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:120px;
+  left:66.3%;
+  height:500px;
+  width:400px;
+  border-radius:20px;
+}
+
+.overplay_bowl{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background:rgba(0, 0, 0,0.6);
+color:white;
+font-family:'Barlow Condensed', sans-serif;
+display:flex;
+flex-direction:column;
+align-items: center;
+justify-content:center;
+opacity: 0;
+transition: 0.5s;
+}
+
+.overplay_bowl:hover{
+  opacity:1;
+  border-radius:20px;
+}
+
+.overplay_bowl > *{
+  transform:translateY(200px);
+  transition:transform 0.5s;
+}
+
+
+.overplay_bowl:hover > *{
+  transform:translateY(0);
+  transition:transform 0.5s;
+}
+
+.overplay .smt{
+  font-size: 50px;
+}
+
+.description_bowl{
+  font-size: 20px;
+  margin-top:10px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+/*#28DF99
+#99F3BD
+#D2F6C5
+#F6F7D4
+#FFEF78 - text
+font-family: 'Barlow Condensed', sans-serif;*
+font-family: 'Pacifico', cursive;
+<a href='https://pngtree.com/so/Strawberry'>Strawberry png from pngtree.com/</a>
+/
