@@ -1,311 +1,201 @@
 *{
-  margin:0px;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.navcontainer{
-  position:fixed;
+body{
+  background:#e5e5e5;
+
+}
+
+.container {
+  max-width:1200px;
+  margin:auto;
+}
+
+.stline{
   width:100%;
-  height:200px;
-  background: linear-gradient(to left, #99F3BD, white);
-  z-index: 1;
-}
-.logo{
-  position:absolute;
-  width:600px;
-  height:200px;
-  margin:m
+  background:white;
+  height:600px;
+  margin: 20px 0px 20px 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.logo_image{
-  position:absolute;
-  width:150px;
-  height:150px;
-  left:40px;
-  top:10px;
+.stline::before{
+  content:"";
+  display:block;
+  width:100%;
+  height:5px;
+  background:#0974b3;
 }
 
-.greetings{
-  position:absolute;
-  width: 200px;
-  height:100px;
-  top:45px;
-  left:180px;
-  text-align: left;
-  text-transform: uppercase;
+.newton h1{
+  color:#0974b3;
+  margin:20px 0px 0px 20px;
 }
 
-.greetings span{
-  color: #FFEF78;
-  font-size: 40px;
-  font-family: 'Archivo Black', sans-serif;
+.newton h3{
+  color:#666;
+  font-weight: lighter;
+  margin-left:20px;
 }
-
-.greetings p{
-  font-size:25px;
-  font-family:'Barlow Condensed', sans-serif;
-  letter-spacing: 5px;
-
-}
-
-.navbar{
-  position:absolute;
-  width:800px;
-  height:200px;
-  left:67%;
-  max-width: 100%;
-}
-
-.navbar .fonts{
-  text-transform: uppercase;
-  font-size: 30px;
-  font-family:'Barlow Condensed', sans-serif;
-}
-
-.navbar ul li{
-  display:inline;
-  line-height: 200px;
-  margin: auto 20px;
-}
-
-.home a{
-  color:black;
-  padding:5px;
-  text-decoration: none;
-  transition:0.5s ease-in-out;
-
-}
-
-.home a:hover{
-  background:#FFEF78;
-  padding:20px;
-  border: 2px dotted black;
-  border-radius:20px;
-  font-size: 35px;
-}
-
-
-.locations a{
-  color:black;
-  padding:5px;
-  text-decoration: none;
-  transition:0.5s;
-}
-
-.locations a:hover{
-  color:black;
-  padding:20px;
-  border-radius:20px;
-  border:2px dotted black;
-  background:#6F69AC;
-  font-size: 35px;
-}
-
-
-.gift a{
-  color:black;
-  padding:5px;
-  text-decoration: none;
-  transition:0.5s;
-}
-
-.gift a:hover{
-color:black;
-padding:20px;
-border-radius:20px;
-border:2px dotted black;
-background:#FD6F96;
-font-size: 35px;
-}
-
-.content{
-  background:linear-gradient(to left,#99F3BD, white);
+.image{
   position:relative;
-  top:200px;
-  height:1000px;
+  width:280px;
+  height:380px;
+  top:20px;
+  left:20px;
+  float:left;
+  margin-right:40px;
+}
+
+.image .photo_newton{
+  position:absolute;
+  top:0;
+  left:0;
   width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
-.meniu{
-  position:absolute;
-  left:50%;
-  top:40px;
-  text-transform: uppercase;
-  font-family: 'Barlow Condensed', sans-serif;
-}
-
-  .smoothies{
-    background-image:url("smoothie2.jpg");
-    position:relative;
-    height:500px;
-    width:400px;
-    top:120px;
-    left:7%;
-    border-radius:20px;
+.newton section{
+  margin-top:20px;
+  margin-bottom:20px;
+  line-height: 25px;
+  font-size:20px;
 }
 
 
-.overplay{
-position:absolute;
-top:0px;
-left:0px;
+.einsteintesla{
+  display: flex;
+  justify-content:space-between;
+}
+
+.einsteintesla .einstein {
+  display: flex;
+  flex-direction: column;
+  width:600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.einsteincontent::before{
+  content:"";
+  width:100%;
+  height:5px;
+  display:block;
+  background:#0974b3;
+
+}
+.einstein .einsteincontent{
 width:100%;
-height:100%;
-background:rgba(0, 0, 0,0.6);
-color:white;
-font-family:'Barlow Condensed', sans-serif;
-display:flex;
-flex-direction:column;
-align-items: center;
-justify-content:center;
-opacity: 0;
-transition: 0.5s;
+height:500px;
+background:white;
 }
 
-.overplay .smt{
-  font-size: 50px;
+.einsteincontent h1{
+  color:#0974b3;
+  margin:20px 0px 0px 20px;
+}
+.einsteincontent h3{
+  color:#666;
+  font-weight: lighter;
+  margin-left:20px;
 }
 
-.description{
-  font-size: 20px;
-  margin-top:10px;
-  text-align: center;
-  margin-bottom: 2px;
+.einsteincontent .image_2{
+  position:relative;
+  top:20px;
+  left:20px;
+  margin-right:40px;
+  margin-bottom:40px;
+  width:210px;
+  height:240px;
+  float:left;
 }
 
-.overplay:hover{
-  opacity:1;
-  border-radius: 20px;
-}
-
-.overplay > *{
-  transform:translateY(200px);
-  transition:transform 0.5s;
-}
-
-
-.overplay:hover > *{
-  transform:translateY(0);
-  transition:transform 0.5s;
-}
-
-.juices{
-    background-image:url("juices4.jpg");
-    background-repeat: no-repeat;
-    position:absolute;
-    background-size: cover;
-    height:500px;
-    width:400px;
-    top:120px;
-    left:37%;
-    border-radius:20px;
-}
-
-.overplay_juices{
-position:absolute;
-top:0px;
-left:0px;
-width:100%;
-height:100%;
-background:rgba(0, 0, 0,0.6);
-color:white;
-font-family:'Barlow Condensed', sans-serif;
-display:flex;
-flex-direction:column;
-align-items: center;
-justify-content:center;
-opacity: 0;
-transition: 0.5s;
-}
-
-.overplay_juices:hover{
-  opacity:1;
-  border-radius:20px;
-}
-
-.overplay_juices > *{
-  transform:translateY(200px);
-  transition:transform 0.5s;
-}
-
-
-.overplay_juices:hover > *{
-  transform:translateY(0);
-  transition:transform 0.5s;
-}
-
-.title_juices{
-  font-size: 50px;
-}
-
-.description_juices{
-  font-size: 15px;
-  margin-top:10px;
-  text-align: center;
-  margin-bottom: 2px;
-}
-
-.bowl{
-  background-image:url("bowl6.jpg");
+.einsteincontent .image_2 .image_einstein{
   position:absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top:120px;
-  left:66.3%;
+  width:100%;
+  height:100%;
+}
+
+.einsteincontent section{
+  margin-left:20px;
+}
+
+.einsteincontent section p{
+  margin:20px 20px 10px 0px;
+  line-height:22px;
+}
+
+
+
+.einsteintesla .tesla{
+  display:flex;
+  flex-direction: column;
+}
+
+.tesla .teslacontent{
+  width:500px;
   height:500px;
-  width:400px;
-  border-radius:20px;
+  margin-left:50px;
+  background:white;
+  font-family: 'Roboto', sans-serif;
 }
 
-.overplay_bowl{
-position:absolute;
-top:0px;
-left:0px;
-width:100%;
-height:100%;
-background:rgba(0, 0, 0,0.6);
-color:white;
-font-family:'Barlow Condensed', sans-serif;
-display:flex;
-flex-direction:column;
-align-items: center;
-justify-content:center;
-opacity: 0;
-transition: 0.5s;
+.teslacontent::before{
+  content:"";
+  display:block;
+  width:100%;
+  height:5px;
+  background:#0974b3;
 }
 
-.overplay_bowl:hover{
-  opacity:1;
-  border-radius:20px;
+.teslacontent h1{
+  color:#0974b3;
+  margin:20px 0px 0px 20px;
 }
 
-.overplay_bowl > *{
-  transform:translateY(200px);
-  transition:transform 0.5s;
+.teslacontent h3{
+  color:#666;
+  font-weight: lighter;
+  margin-left:20px;
 }
 
-
-.overplay_bowl:hover > *{
-  transform:translateY(0);
-  transition:transform 0.5s;
+.teslacontent .image_3 {
+  position:relative;
+  width:240px;
+  height:260px;
+  top:20px;
+  left:20px;
+  margin-bottom:30px;
+  float:left;
+  margin-right:50px;
 }
 
-.overplay .smt{
-  font-size: 50px;
+.teslacontent .image_3 .photo_tesla {
+  position:absolute;
+  width:100%;
+  height:100%;
 }
 
-.description_bowl{
-  font-size: 20px;
-  margin-top:10px;
-  text-align: center;
-  margin-bottom: 2px;
+.teslacontent section{
+  margin-right:20px;
+  margin-top:20px;
+  margin-left:20px;
+  line-height: 22px;
+  margin-bottom:20px;
+  text-align: left;
+
 }
 
-/*#28DF99
-#99F3BD
-#D2F6C5
-#F6F7D4
-#FFEF78 - text
-font-family: 'Barlow Condensed', sans-serif;*
-font-family: 'Pacifico', cursive;
-<a href='https://pngtree.com/so/Strawberry'>Strawberry png from pngtree.com/</a>
-/
+.teslacontent a{
+  margin-left:20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/*font-family: 'Roboto', sans-serif;*/
